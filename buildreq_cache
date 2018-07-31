@@ -1,10 +1,10 @@
-5.13.3
-zlib-dev
+5.13.4
 kpackage-dev
-kcodecs-dev
 kiconthemes-dev
+kcodecs-dev
+kconfigwidgets-dev
+plasma-framework-dev
+zlib-dev
 kcompletion-dev
 kwindowsystem-dev
 kwidgetsaddons-dev
-plasma-framework-dev
-kconfigwidgets-dev

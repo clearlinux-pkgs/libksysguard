@@ -4,7 +4,7 @@
 #
 Name     : libksysguard
 Version  : 5.13.5
-Release  : 3
+Release  : 4
 URL      : https://github.com/KDE/libksysguard/archive/v5.13.5.tar.gz
 Source0  : https://github.com/KDE/libksysguard/archive/v5.13.5.tar.gz
 Summary  : No detailed summary available
@@ -15,6 +15,13 @@ Requires: libksysguard-data
 Requires: libksysguard-license
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : kcodecs-dev
+BuildRequires : kcompletion-dev
+BuildRequires : kconfigwidgets-dev
+BuildRequires : kiconthemes-dev
+BuildRequires : kpackage-dev
+BuildRequires : kwidgetsaddons-dev
+BuildRequires : kwindowsystem-dev
 BuildRequires : libX11-dev libICE-dev libSM-dev libXau-dev libXcomposite-dev libXcursor-dev libXdamage-dev libXdmcp-dev libXext-dev libXfixes-dev libXft-dev libXi-dev libXinerama-dev libXi-dev libXmu-dev libXpm-dev libXrandr-dev libXrender-dev libXres-dev libXScrnSaver-dev libXt-dev libXtst-dev libXv-dev libXxf86misc-dev libXxf86vm-dev
 BuildRequires : plasma-framework-dev
 BuildRequires : qtbase-dev qtbase-extras mesa-dev
@@ -71,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536121766
+export SOURCE_DATE_EPOCH=1536450668
 mkdir clr-build
 pushd clr-build
 %cmake ..
@@ -79,7 +86,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536121766
+export SOURCE_DATE_EPOCH=1536450668
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/libksysguard
 cp COPYING %{buildroot}/usr/share/doc/libksysguard/COPYING
@@ -87,6 +94,9 @@ cp COPYING.LIB %{buildroot}/usr/share/doc/libksysguard/COPYING.LIB
 pushd clr-build
 %make_install
 popd
+## install_append content
+mv %{buildroot}/etc/dbus-1/* %{buildroot}/usr/share/dbus-1/
+## install_append end
 
 %files
 %defattr(-,root,root,-)
@@ -95,6 +105,7 @@ popd
 %files data
 %defattr(-,root,root,-)
 /usr/share/dbus-1/system-services/org.kde.ksysguard.processlisthelper.service
+/usr/share/dbus-1/system.d/org.kde.ksysguard.processlisthelper.conf
 /usr/share/ksysguard/scripts/README
 /usr/share/ksysguard/scripts/smaps/helper.js
 /usr/share/ksysguard/scripts/smaps/index.html

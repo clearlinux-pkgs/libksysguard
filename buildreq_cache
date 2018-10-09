@@ -1,7 +1,8 @@
-5.13.5
+5.14.0
 kcodecs-dev
 kcompletion-dev
 kconfigwidgets-dev
+kglobalaccel-dev
 kiconthemes-dev
 kpackage-dev
 kwidgetsaddons-dev

@@ -4,7 +4,7 @@
 #
 Name     : libksysguard
 Version  : 5.14.3
-Release  : 8
+Release  : 9
 URL      : https://github.com/KDE/libksysguard/archive/v5.14.3.tar.gz
 Source0  : https://github.com/KDE/libksysguard/archive/v5.14.3.tar.gz
 Summary  : No detailed summary available
@@ -15,24 +15,24 @@ Requires: libksysguard-lib = %{version}-%{release}
 Requires: libksysguard-license = %{version}-%{release}
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : kcodecs-dev
+BuildRequires : kcompletion-dev
+BuildRequires : kconfigwidgets-dev
 BuildRequires : kglobalaccel-dev
+BuildRequires : kiconthemes-dev
+BuildRequires : kpackage-dev
+BuildRequires : kwidgetsaddons-dev
+BuildRequires : kwindowsystem-dev
 BuildRequires : libX11-dev libICE-dev libSM-dev libXau-dev libXcomposite-dev libXcursor-dev libXdamage-dev libXdmcp-dev libXext-dev libXfixes-dev libXft-dev libXi-dev libXinerama-dev libXi-dev libXmu-dev libXpm-dev libXrandr-dev libXrender-dev libXres-dev libXScrnSaver-dev libXt-dev libXtst-dev libXv-dev libXxf86misc-dev libXxf86vm-dev
 BuildRequires : plasma-framework-dev
 BuildRequires : qtbase-dev mesa-dev
+BuildRequires : qtx11extras-dev
 BuildRequires : zlib-dev
 
 %description
 To create a script:
 * Make a folder here with any name
 * Inside create a file with any name, ending .desktop, looking like:
-
-%package abi
-Summary: abi components for the libksysguard package.
-Group: Default
-
-%description abi
-abi components for the libksysguard package.
-
 
 %package data
 Summary: data components for the libksysguard package.
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541529170
+export SOURCE_DATE_EPOCH=1542747659
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -87,7 +87,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1541529170
+export SOURCE_DATE_EPOCH=1542747659
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
 cp COPYING %{buildroot}/usr/share/package-licenses/libksysguard/COPYING
@@ -102,19 +102,6 @@ mv %{buildroot}/etc/dbus-1/* %{buildroot}/usr/share/dbus-1/
 %files
 %defattr(-,root,root,-)
 /usr/lib64/libexec/kauth/ksysguardprocesslist_helper
-
-%files abi
-%defattr(-,root,root,-)
-/usr/share/abi/libksgrd.so.5.14.3.abi
-/usr/share/abi/libksgrd.so.7.abi
-/usr/share/abi/libksignalplotter.so.5.14.3.abi
-/usr/share/abi/libksignalplotter.so.7.abi
-/usr/share/abi/liblsofui.so.5.14.3.abi
-/usr/share/abi/liblsofui.so.7.abi
-/usr/share/abi/libprocesscore.so.5.14.3.abi
-/usr/share/abi/libprocesscore.so.7.abi
-/usr/share/abi/libprocessui.so.5.14.3.abi
-/usr/share/abi/libprocessui.so.7.abi
 
 %files data
 %defattr(-,root,root,-)

@@ -1,4 +1,4 @@
-5.17.0
+5.17.1
 kcodecs-dev
 kcompletion-dev
 kconfigwidgets-dev
@@ -10,4 +10,5 @@ kwindowsystem-dev
 plasma-framework-dev
 qtwebengine-dev
 qtx11extras-dev
+util-linux
 zlib-dev

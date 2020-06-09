@@ -4,7 +4,7 @@
 #
 Name     : libksysguard
 Version  : 5.19.0
-Release  : 37
+Release  : 38
 URL      : https://github.com/KDE/libksysguard/archive/v5.19.0/libksysguard-5.19.0.tar.gz
 Source0  : https://github.com/KDE/libksysguard/archive/v5.19.0/libksysguard-5.19.0.tar.gz
 Summary  : No detailed summary available

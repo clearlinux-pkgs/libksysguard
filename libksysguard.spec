@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xEC94D18F7F05997E (jr@jriddell.org)
 #
 Name     : libksysguard
-Version  : 5.19.4
-Release  : 43
-URL      : https://download.kde.org/stable/plasma/5.19.4/libksysguard-5.19.4.tar.xz
-Source0  : https://download.kde.org/stable/plasma/5.19.4/libksysguard-5.19.4.tar.xz
-Source1  : https://download.kde.org/stable/plasma/5.19.4/libksysguard-5.19.4.tar.xz.sig
+Version  : 5.20.0
+Release  : 44
+URL      : https://download.kde.org/stable/plasma/5.20.0/libksysguard-5.20.0.tar.xz
+Source0  : https://download.kde.org/stable/plasma/5.20.0/libksysguard-5.20.0.tar.xz
+Source1  : https://download.kde.org/stable/plasma/5.20.0/libksysguard-5.20.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
@@ -23,7 +23,6 @@ BuildRequires : extra-cmake-modules-data
 BuildRequires : kglobalaccel-dev
 BuildRequires : ki18n-dev
 BuildRequires : libX11-dev libICE-dev libSM-dev libXau-dev libXcomposite-dev libXcursor-dev libXdamage-dev libXdmcp-dev libXext-dev libXfixes-dev libXft-dev libXi-dev libXinerama-dev libXi-dev libXmu-dev libXpm-dev libXrandr-dev libXrender-dev libXres-dev libXScrnSaver-dev libXt-dev libXtst-dev libXv-dev libXxf86misc-dev libXxf86vm-dev
-BuildRequires : plasma-framework-dev
 BuildRequires : qtbase-dev mesa-dev
 BuildRequires : qtwebchannel-dev
 BuildRequires : qtwebengine-dev
@@ -82,15 +81,15 @@ locales components for the libksysguard package.
 
 
 %prep
-%setup -q -n libksysguard-5.19.4
-cd %{_builddir}/libksysguard-5.19.4
+%setup -q -n libksysguard-5.20.0
+cd %{_builddir}/libksysguard-5.20.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1597633176
+export SOURCE_DATE_EPOCH=1602641980
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -106,11 +105,11 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1597633176
+export SOURCE_DATE_EPOCH=1602641980
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
-cp %{_builddir}/libksysguard-5.19.4/COPYING %{buildroot}/usr/share/package-licenses/libksysguard/4cc77b90af91e615a64ae04893fdffa7939db84c
-cp %{_builddir}/libksysguard-5.19.4/COPYING.LIB %{buildroot}/usr/share/package-licenses/libksysguard/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/libksysguard-5.20.0/COPYING %{buildroot}/usr/share/package-licenses/libksysguard/4cc77b90af91e615a64ae04893fdffa7939db84c
+cp %{_builddir}/libksysguard-5.20.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/libksysguard/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -122,6 +121,7 @@ popd
 %find_lang ksysguard_face_org.kde.ksysguard.barchart
 %find_lang ksysguard_face_org.kde.ksysguard.linechart
 %find_lang ksysguard_face_org.kde.ksysguard.piechart
+%find_lang ksysguard_face_org.kde.ksysguard.textonly
 ## install_append content
 #mv %{buildroot}/etc/dbus-1/* %{buildroot}/usr/share/dbus-1/
 ## install_append end
@@ -151,6 +151,12 @@ popd
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/ui/FullRepresentation.qml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/metadata.desktop
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/metadata.json
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/faceproperties
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui/Bar.qml
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui/CompactRepresentation.qml
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui/FullRepresentation.qml
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/metadata.desktop
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/metadata.json
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/config/main.xml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/faceproperties
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/ui/CompactRepresentation.qml
@@ -165,11 +171,15 @@ popd
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/Config.qml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/PieChart.qml
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/UsedTotalDisplay.qml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/metadata.desktop
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/metadata.json
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/config/main.xml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/faceproperties
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/CompactRepresentation.qml
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/Config.qml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/FullRepresentation.qml
+/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/GroupedText.qml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/metadata.desktop
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/metadata.json
 /usr/share/polkit-1/actions/org.kde.ksysguard.processlisthelper.policy
@@ -226,21 +236,24 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKSysGuardFormatter.so.1
-/usr/lib64/libKSysGuardFormatter.so.5.19.4
+/usr/lib64/libKSysGuardFormatter.so.5.20.0
 /usr/lib64/libKSysGuardSensorFaces.so.1
-/usr/lib64/libKSysGuardSensorFaces.so.5.19.4
+/usr/lib64/libKSysGuardSensorFaces.so.5.20.0
 /usr/lib64/libKSysGuardSensors.so.1
-/usr/lib64/libKSysGuardSensors.so.5.19.4
-/usr/lib64/libksgrd.so.5.19.4
+/usr/lib64/libKSysGuardSensors.so.5.20.0
+/usr/lib64/libksgrd.so.5.20.0
 /usr/lib64/libksgrd.so.9
-/usr/lib64/libksignalplotter.so.5.19.4
+/usr/lib64/libksignalplotter.so.5.20.0
 /usr/lib64/libksignalplotter.so.9
-/usr/lib64/liblsofui.so.5.19.4
+/usr/lib64/liblsofui.so.5.20.0
 /usr/lib64/liblsofui.so.9
-/usr/lib64/libprocesscore.so.5.19.4
+/usr/lib64/libprocesscore.so.5.20.0
 /usr/lib64/libprocesscore.so.9
-/usr/lib64/libprocessui.so.5.19.4
+/usr/lib64/libprocessui.so.5.20.0
 /usr/lib64/libprocessui.so.9
+/usr/lib64/qt5/plugins/designer/ksignalplotter5widgets.so
+/usr/lib64/qt5/plugins/designer/ksysguard5widgets.so
+/usr/lib64/qt5/plugins/designer/ksysguardlsof5widgets.so
 /usr/lib64/qt5/plugins/kpackage/packagestructure/sensorface_packagestructure.so
 /usr/lib64/qt5/qml/org/kde/ksysguard/faces/ExtendedLegend.qml
 /usr/lib64/qt5/qml/org/kde/ksysguard/faces/SensorFace.qml
@@ -258,6 +271,6 @@ popd
 /usr/share/package-licenses/libksysguard/4cc77b90af91e615a64ae04893fdffa7939db84c
 /usr/share/package-licenses/libksysguard/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 
-%files locales -f ksgrd.lang -f ksysguardlsofwidgets.lang -f processcore.lang -f processui.lang -f KSysGuardSensorFaces.lang -f ksysguard_face_org.kde.ksysguard.barchart.lang -f ksysguard_face_org.kde.ksysguard.linechart.lang -f ksysguard_face_org.kde.ksysguard.piechart.lang
+%files locales -f ksgrd.lang -f ksysguardlsofwidgets.lang -f processcore.lang -f processui.lang -f KSysGuardSensorFaces.lang -f ksysguard_face_org.kde.ksysguard.barchart.lang -f ksysguard_face_org.kde.ksysguard.linechart.lang -f ksysguard_face_org.kde.ksysguard.piechart.lang -f ksysguard_face_org.kde.ksysguard.textonly.lang
 %defattr(-,root,root,-)
 

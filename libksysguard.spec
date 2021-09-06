@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xEC94D18F7F05997E (jr@jriddell.org)
 #
 Name     : libksysguard
-Version  : 5.22.1
-Release  : 53
-URL      : https://download.kde.org/stable/plasma/5.22.1/libksysguard-5.22.1.tar.xz
-Source0  : https://download.kde.org/stable/plasma/5.22.1/libksysguard-5.22.1.tar.xz
-Source1  : https://download.kde.org/stable/plasma/5.22.1/libksysguard-5.22.1.tar.xz.sig
+Version  : 5.22.5
+Release  : 54
+URL      : https://download.kde.org/stable/plasma/5.22.5/libksysguard-5.22.5.tar.xz
+Source0  : https://download.kde.org/stable/plasma/5.22.5/libksysguard-5.22.5.tar.xz
+Source1  : https://download.kde.org/stable/plasma/5.22.5/libksysguard-5.22.5.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
@@ -85,35 +85,35 @@ locales components for the libksysguard package.
 
 
 %prep
-%setup -q -n libksysguard-5.22.1
-cd %{_builddir}/libksysguard-5.22.1
+%setup -q -n libksysguard-5.22.5
+cd %{_builddir}/libksysguard-5.22.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1623808720
+export SOURCE_DATE_EPOCH=1630908461
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1623808720
+export SOURCE_DATE_EPOCH=1630908461
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
-cp %{_builddir}/libksysguard-5.22.1/COPYING %{buildroot}/usr/share/package-licenses/libksysguard/4cc77b90af91e615a64ae04893fdffa7939db84c
-cp %{_builddir}/libksysguard-5.22.1/COPYING.LIB %{buildroot}/usr/share/package-licenses/libksysguard/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/libksysguard-5.22.5/COPYING %{buildroot}/usr/share/package-licenses/libksysguard/4cc77b90af91e615a64ae04893fdffa7939db84c
+cp %{_builddir}/libksysguard-5.22.5/COPYING.LIB %{buildroot}/usr/share/package-licenses/libksysguard/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -254,22 +254,22 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKSysGuardFormatter.so.1
-/usr/lib64/libKSysGuardFormatter.so.5.22.1
+/usr/lib64/libKSysGuardFormatter.so.5.22.5
 /usr/lib64/libKSysGuardSensorFaces.so.1
-/usr/lib64/libKSysGuardSensorFaces.so.5.22.1
+/usr/lib64/libKSysGuardSensorFaces.so.5.22.5
 /usr/lib64/libKSysGuardSensors.so.1
-/usr/lib64/libKSysGuardSensors.so.5.22.1
+/usr/lib64/libKSysGuardSensors.so.5.22.5
 /usr/lib64/libKSysGuardSystemStats.so.1
-/usr/lib64/libKSysGuardSystemStats.so.5.22.1
-/usr/lib64/libksgrd.so.5.22.1
+/usr/lib64/libKSysGuardSystemStats.so.5.22.5
+/usr/lib64/libksgrd.so.5.22.5
 /usr/lib64/libksgrd.so.9
-/usr/lib64/libksignalplotter.so.5.22.1
+/usr/lib64/libksignalplotter.so.5.22.5
 /usr/lib64/libksignalplotter.so.9
-/usr/lib64/liblsofui.so.5.22.1
+/usr/lib64/liblsofui.so.5.22.5
 /usr/lib64/liblsofui.so.9
-/usr/lib64/libprocesscore.so.5.22.1
+/usr/lib64/libprocesscore.so.5.22.5
 /usr/lib64/libprocesscore.so.9
-/usr/lib64/libprocessui.so.5.22.1
+/usr/lib64/libprocessui.so.5.22.5
 /usr/lib64/libprocessui.so.9
 /usr/lib64/qt5/plugins/designer/ksignalplotter5widgets.so
 /usr/lib64/qt5/plugins/designer/ksysguard5widgets.so

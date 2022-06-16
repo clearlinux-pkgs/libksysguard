@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xD7574483BB57B18D (jr@jriddell.org)
 #
 Name     : libksysguard
-Version  : 5.24.5
-Release  : 66
-URL      : https://download.kde.org/stable/plasma/5.24.5/libksysguard-5.24.5.tar.xz
-Source0  : https://download.kde.org/stable/plasma/5.24.5/libksysguard-5.24.5.tar.xz
-Source1  : https://download.kde.org/stable/plasma/5.24.5/libksysguard-5.24.5.tar.xz.sig
+Version  : 5.25.0
+Release  : 67
+URL      : https://download.kde.org/stable/plasma/5.25.0/libksysguard-5.25.0.tar.xz
+Source0  : https://download.kde.org/stable/plasma/5.25.0/libksysguard-5.25.0.tar.xz
+Source1  : https://download.kde.org/stable/plasma/5.25.0/libksysguard-5.25.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -29,9 +29,7 @@ BuildRequires : libpcap-dev
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(libnl-3.0)
 BuildRequires : pkgconfig(libnl-route-3.0)
-BuildRequires : qtbase-dev mesa-dev
 BuildRequires : qtsensors-dev
-BuildRequires : qtwebchannel-dev
 BuildRequires : qtwebengine-dev
 BuildRequires : qtx11extras-dev
 BuildRequires : zlib-dev
@@ -88,15 +86,15 @@ locales components for the libksysguard package.
 
 
 %prep
-%setup -q -n libksysguard-5.24.5
-cd %{_builddir}/libksysguard-5.24.5
+%setup -q -n libksysguard-5.25.0
+cd %{_builddir}/libksysguard-5.25.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1651626410
+export SOURCE_DATE_EPOCH=1655417808
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -112,33 +110,34 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1651626410
+export SOURCE_DATE_EPOCH=1655417808
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/libksysguard/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/3e8971c6c5f16674958913a94a36b1ea7a00ac46
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/libksysguard/3cb34cfc72e87654683f2894299adf912d14b284
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/2123756e0b1fc8243547235a33c0fcabfe3b9a51
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/libksysguard/a4c60b3fefda228cd7439d3565df043192fef137
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/81b58c89ceef8e9f8bd5d00a287edbd15f9d3567
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/19d98e1b6f8ef12849ea4012a052d3907f336c91
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/libksysguard-5.24.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/libksysguard/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/3e8971c6c5f16674958913a94a36b1ea7a00ac46
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/libksysguard/3cb34cfc72e87654683f2894299adf912d14b284
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/2123756e0b1fc8243547235a33c0fcabfe3b9a51
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/libksysguard/a4c60b3fefda228cd7439d3565df043192fef137
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/81b58c89ceef8e9f8bd5d00a287edbd15f9d3567
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/libksysguard/19d98e1b6f8ef12849ea4012a052d3907f336c91
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/libksysguard-5.25.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/e458941548e0864907e654fa2e192844ae90fc32
 pushd clr-build
 %make_install
 popd
-%find_lang ksgrd
-%find_lang ksysguardlsofwidgets
-%find_lang processcore
-%find_lang processui
 %find_lang KSysGuardSensorFaces
+%find_lang ksgrd
 %find_lang ksysguard_face_org.kde.ksysguard.barchart
 %find_lang ksysguard_face_org.kde.ksysguard.facegrid
 %find_lang ksysguard_face_org.kde.ksysguard.linechart
 %find_lang ksysguard_face_org.kde.ksysguard.piechart
 %find_lang ksysguard_face_org.kde.ksysguard.textonly
+%find_lang ksysguardlsofwidgets
+%find_lang processcore
+%find_lang processui
+%find_lang ksysguard_sensors
 ## install_append content
 #mv %{buildroot}/etc/dbus-1/* %{buildroot}/usr/share/dbus-1/
 ## install_append end
@@ -156,12 +155,6 @@ popd
 /usr/share/knsrcfiles/systemmonitor-faces.knsrc
 /usr/share/knsrcfiles/systemmonitor-presets.knsrc
 /usr/share/ksysguard/scripts/README
-/usr/share/ksysguard/scripts/smaps/helper.js
-/usr/share/ksysguard/scripts/smaps/index.html
-/usr/share/ksysguard/scripts/smaps/main.js
-/usr/share/ksysguard/scripts/smaps/smaps.desktop
-/usr/share/ksysguard/scripts/smaps/sorttable.js
-/usr/share/ksysguard/scripts/smaps/style.css
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/config/main.xml
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/faceproperties
 /usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/ui/BarChart.qml
@@ -279,22 +272,22 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKSysGuardFormatter.so.1
-/usr/lib64/libKSysGuardFormatter.so.5.24.5
+/usr/lib64/libKSysGuardFormatter.so.5.25.0
 /usr/lib64/libKSysGuardSensorFaces.so.1
-/usr/lib64/libKSysGuardSensorFaces.so.5.24.5
+/usr/lib64/libKSysGuardSensorFaces.so.5.25.0
 /usr/lib64/libKSysGuardSensors.so.1
-/usr/lib64/libKSysGuardSensors.so.5.24.5
+/usr/lib64/libKSysGuardSensors.so.5.25.0
 /usr/lib64/libKSysGuardSystemStats.so.1
-/usr/lib64/libKSysGuardSystemStats.so.5.24.5
-/usr/lib64/libksgrd.so.5.24.5
+/usr/lib64/libKSysGuardSystemStats.so.5.25.0
+/usr/lib64/libksgrd.so.5.25.0
 /usr/lib64/libksgrd.so.9
-/usr/lib64/libksignalplotter.so.5.24.5
+/usr/lib64/libksignalplotter.so.5.25.0
 /usr/lib64/libksignalplotter.so.9
-/usr/lib64/liblsofui.so.5.24.5
+/usr/lib64/liblsofui.so.5.25.0
 /usr/lib64/liblsofui.so.9
-/usr/lib64/libprocesscore.so.5.24.5
+/usr/lib64/libprocesscore.so.5.25.0
 /usr/lib64/libprocesscore.so.9
-/usr/lib64/libprocessui.so.5.24.5
+/usr/lib64/libprocessui.so.5.25.0
 /usr/lib64/libprocessui.so.9
 /usr/lib64/qt5/plugins/designer/ksignalplotter5widgets.so
 /usr/lib64/qt5/plugins/designer/ksysguard5widgets.so
@@ -326,6 +319,6 @@ popd
 /usr/share/package-licenses/libksysguard/a4c60b3fefda228cd7439d3565df043192fef137
 /usr/share/package-licenses/libksysguard/e458941548e0864907e654fa2e192844ae90fc32
 
-%files locales -f ksgrd.lang -f ksysguardlsofwidgets.lang -f processcore.lang -f processui.lang -f KSysGuardSensorFaces.lang -f ksysguard_face_org.kde.ksysguard.barchart.lang -f ksysguard_face_org.kde.ksysguard.facegrid.lang -f ksysguard_face_org.kde.ksysguard.linechart.lang -f ksysguard_face_org.kde.ksysguard.piechart.lang -f ksysguard_face_org.kde.ksysguard.textonly.lang
+%files locales -f KSysGuardSensorFaces.lang -f ksgrd.lang -f ksysguard_face_org.kde.ksysguard.barchart.lang -f ksysguard_face_org.kde.ksysguard.facegrid.lang -f ksysguard_face_org.kde.ksysguard.linechart.lang -f ksysguard_face_org.kde.ksysguard.piechart.lang -f ksysguard_face_org.kde.ksysguard.textonly.lang -f ksysguardlsofwidgets.lang -f processcore.lang -f processui.lang -f ksysguard_sensors.lang
 %defattr(-,root,root,-)
 

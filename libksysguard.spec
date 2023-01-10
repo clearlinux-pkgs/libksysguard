@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xD7574483BB57B18D (jr@jriddell.org)
 #
 Name     : libksysguard
-Version  : 5.26.4
-Release  : 77
-URL      : https://download.kde.org/stable/plasma/5.26.4/libksysguard-5.26.4.tar.xz
-Source0  : https://download.kde.org/stable/plasma/5.26.4/libksysguard-5.26.4.tar.xz
-Source1  : https://download.kde.org/stable/plasma/5.26.4/libksysguard-5.26.4.tar.xz.sig
+Version  : 5.26.5
+Release  : 78
+URL      : https://download.kde.org/stable/plasma/5.26.5/libksysguard-5.26.5.tar.xz
+Source0  : https://download.kde.org/stable/plasma/5.26.5/libksysguard-5.26.5.tar.xz
+Source1  : https://download.kde.org/stable/plasma/5.26.5/libksysguard-5.26.5.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause BSD-3-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -32,6 +32,9 @@ BuildRequires : qtsensors-dev
 BuildRequires : qtwebengine-dev
 BuildRequires : qtx11extras-dev
 BuildRequires : zlib-dev
+# Suppress stripping binaries
+%define __strip /bin/true
+%define debug_package %{nil}
 
 %description
 To create a script:
@@ -85,31 +88,31 @@ locales components for the libksysguard package.
 
 
 %prep
-%setup -q -n libksysguard-5.26.4
-cd %{_builddir}/libksysguard-5.26.4
+%setup -q -n libksysguard-5.26.5
+cd %{_builddir}/libksysguard-5.26.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1669826446
+export SOURCE_DATE_EPOCH=1673315620
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1669826446
+export SOURCE_DATE_EPOCH=1673315620
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
 cp %{_builddir}/libksysguard-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/libksysguard/07c1ab270255cf247438e2358ff0c18835b6a6ce || :
@@ -273,22 +276,22 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKSysGuardFormatter.so.1
-/usr/lib64/libKSysGuardFormatter.so.5.26.4
+/usr/lib64/libKSysGuardFormatter.so.5.26.5
 /usr/lib64/libKSysGuardSensorFaces.so.1
-/usr/lib64/libKSysGuardSensorFaces.so.5.26.4
+/usr/lib64/libKSysGuardSensorFaces.so.5.26.5
 /usr/lib64/libKSysGuardSensors.so.1
-/usr/lib64/libKSysGuardSensors.so.5.26.4
+/usr/lib64/libKSysGuardSensors.so.5.26.5
 /usr/lib64/libKSysGuardSystemStats.so.1
-/usr/lib64/libKSysGuardSystemStats.so.5.26.4
-/usr/lib64/libksgrd.so.5.26.4
+/usr/lib64/libKSysGuardSystemStats.so.5.26.5
+/usr/lib64/libksgrd.so.5.26.5
 /usr/lib64/libksgrd.so.9
-/usr/lib64/libksignalplotter.so.5.26.4
+/usr/lib64/libksignalplotter.so.5.26.5
 /usr/lib64/libksignalplotter.so.9
-/usr/lib64/liblsofui.so.5.26.4
+/usr/lib64/liblsofui.so.5.26.5
 /usr/lib64/liblsofui.so.9
-/usr/lib64/libprocesscore.so.5.26.4
+/usr/lib64/libprocesscore.so.5.26.5
 /usr/lib64/libprocesscore.so.9
-/usr/lib64/libprocessui.so.5.26.4
+/usr/lib64/libprocessui.so.5.26.5
 /usr/lib64/libprocessui.so.9
 /usr/lib64/qt5/plugins/designer/ksignalplotter5widgets.so
 /usr/lib64/qt5/plugins/designer/ksysguard5widgets.so

@@ -6,7 +6,7 @@
 #
 Name     : libksysguard
 Version  : 5.27.0
-Release  : 79
+Release  : 80
 URL      : https://download.kde.org/stable/plasma/5.27.0/libksysguard-5.27.0.tar.xz
 Source0  : https://download.kde.org/stable/plasma/5.27.0/libksysguard-5.27.0.tar.xz
 Source1  : https://download.kde.org/stable/plasma/5.27.0/libksysguard-5.27.0.tar.xz.sig
@@ -96,7 +96,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1676683995
+export SOURCE_DATE_EPOCH=1676864030
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -112,7 +112,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1676683995
+export SOURCE_DATE_EPOCH=1676864030
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
 cp %{_builddir}/libksysguard-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/libksysguard/07c1ab270255cf247438e2358ff0c18835b6a6ce || :

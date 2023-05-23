@@ -6,11 +6,11 @@
 # Source0 file verified with key 0xD7574483BB57B18D (jr@jriddell.org)
 #
 Name     : libksysguard
-Version  : 5.27.4
-Release  : 84
-URL      : https://download.kde.org/stable/plasma/5.27.4/libksysguard-5.27.4.tar.xz
-Source0  : https://download.kde.org/stable/plasma/5.27.4/libksysguard-5.27.4.tar.xz
-Source1  : https://download.kde.org/stable/plasma/5.27.4/libksysguard-5.27.4.tar.xz.sig
+Version  : 5.27.5
+Release  : 85
+URL      : https://download.kde.org/stable/plasma/5.27.5/libksysguard-5.27.5.tar.xz
+Source0  : https://download.kde.org/stable/plasma/5.27.5/libksysguard-5.27.5.tar.xz
+Source1  : https://download.kde.org/stable/plasma/5.27.5/libksysguard-5.27.5.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause BSD-3-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -89,31 +89,48 @@ locales components for the libksysguard package.
 
 
 %prep
-%setup -q -n libksysguard-5.27.4
-cd %{_builddir}/libksysguard-5.27.4
+%setup -q -n libksysguard-5.27.5
+cd %{_builddir}/libksysguard-5.27.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680722512
+export SOURCE_DATE_EPOCH=1684886019
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+%cmake ..
+make  %{?_smp_mflags}
+popd
+mkdir -p clr-build-avx2
+pushd clr-build-avx2
+export GCC_IGNORE_WERROR=1
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export FCFLAGS="$FFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export FFLAGS="$FFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export CXXFLAGS="$CXXFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export CFLAGS="$CFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
+export CXXFLAGS="$CXXFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
+export FFLAGS="$FFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
+export FCFLAGS="$FCFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1680722512
+export SOURCE_DATE_EPOCH=1684886019
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
 cp %{_builddir}/libksysguard-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/libksysguard/07c1ab270255cf247438e2358ff0c18835b6a6ce || :
@@ -129,6 +146,9 @@ cp %{_builddir}/libksysguard-%{version}/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
 cp %{_builddir}/libksysguard-%{version}/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/7d9831e05094ce723947d729c2a46a09d6e90275 || :
 cp %{_builddir}/libksysguard-%{version}/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/e458941548e0864907e654fa2e192844ae90fc32 || :
 cp %{_builddir}/libksysguard-%{version}/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/libksysguard/e458941548e0864907e654fa2e192844ae90fc32 || :
+pushd clr-build-avx2
+%make_install_v3  || :
+popd
 pushd clr-build
 %make_install
 popd
@@ -148,9 +168,12 @@ popd
 ## install_append content
 #mv %{buildroot}/etc/dbus-1/* %{buildroot}/usr/share/dbus-1/
 ## install_append end
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
+/V3/usr/lib64/libexec/kauth/ksysguardprocesslist_helper
+/V3/usr/lib64/libexec/ksysguard/ksgrd_network_helper
 /usr/lib64/libexec/kauth/ksysguardprocesslist_helper
 /usr/lib64/libexec/ksysguard/ksgrd_network_helper
 
@@ -224,6 +247,15 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
+/V3/usr/lib64/libKSysGuardFormatter.so
+/V3/usr/lib64/libKSysGuardSensorFaces.so
+/V3/usr/lib64/libKSysGuardSensors.so
+/V3/usr/lib64/libKSysGuardSystemStats.so
+/V3/usr/lib64/libksgrd.so
+/V3/usr/lib64/libksignalplotter.so
+/V3/usr/lib64/liblsofui.so
+/V3/usr/lib64/libprocesscore.so
+/V3/usr/lib64/libprocessui.so
 /usr/include/ksysguard/faces/FaceLoader.h
 /usr/include/ksysguard/faces/SensorFaceController.h
 /usr/include/ksysguard/faces/SensorFace_p.h
@@ -287,23 +319,51 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
+/V3/usr/lib64/libKSysGuardFormatter.so.1
+/V3/usr/lib64/libKSysGuardFormatter.so.5.27.5
+/V3/usr/lib64/libKSysGuardSensorFaces.so.1
+/V3/usr/lib64/libKSysGuardSensorFaces.so.5.27.5
+/V3/usr/lib64/libKSysGuardSensors.so.1
+/V3/usr/lib64/libKSysGuardSensors.so.5.27.5
+/V3/usr/lib64/libKSysGuardSystemStats.so.1
+/V3/usr/lib64/libKSysGuardSystemStats.so.5.27.5
+/V3/usr/lib64/libksgrd.so.5.27.5
+/V3/usr/lib64/libksgrd.so.9
+/V3/usr/lib64/libksignalplotter.so.5.27.5
+/V3/usr/lib64/libksignalplotter.so.9
+/V3/usr/lib64/liblsofui.so.5.27.5
+/V3/usr/lib64/liblsofui.so.9
+/V3/usr/lib64/libprocesscore.so.5.27.5
+/V3/usr/lib64/libprocesscore.so.9
+/V3/usr/lib64/libprocessui.so.5.27.5
+/V3/usr/lib64/libprocessui.so.9
+/V3/usr/lib64/qt5/plugins/designer/ksignalplotter5widgets.so
+/V3/usr/lib64/qt5/plugins/designer/ksysguard5widgets.so
+/V3/usr/lib64/qt5/plugins/designer/ksysguardlsof5widgets.so
+/V3/usr/lib64/qt5/plugins/kpackage/packagestructure/sensorface_packagestructure.so
+/V3/usr/lib64/qt5/plugins/ksysguard/process/ksysguard_plugin_network.so
+/V3/usr/lib64/qt5/plugins/ksysguard/process/ksysguard_plugin_nvidia.so
+/V3/usr/lib64/qt5/qml/org/kde/ksysguard/faces/libFacesPlugin.so
+/V3/usr/lib64/qt5/qml/org/kde/ksysguard/formatter/libFormatterPlugin.so
+/V3/usr/lib64/qt5/qml/org/kde/ksysguard/process/libProcessPlugin.so
+/V3/usr/lib64/qt5/qml/org/kde/ksysguard/sensors/libSensorsPlugin.so
 /usr/lib64/libKSysGuardFormatter.so.1
-/usr/lib64/libKSysGuardFormatter.so.5.27.4
+/usr/lib64/libKSysGuardFormatter.so.5.27.5
 /usr/lib64/libKSysGuardSensorFaces.so.1
-/usr/lib64/libKSysGuardSensorFaces.so.5.27.4
+/usr/lib64/libKSysGuardSensorFaces.so.5.27.5
 /usr/lib64/libKSysGuardSensors.so.1
-/usr/lib64/libKSysGuardSensors.so.5.27.4
+/usr/lib64/libKSysGuardSensors.so.5.27.5
 /usr/lib64/libKSysGuardSystemStats.so.1
-/usr/lib64/libKSysGuardSystemStats.so.5.27.4
-/usr/lib64/libksgrd.so.5.27.4
+/usr/lib64/libKSysGuardSystemStats.so.5.27.5
+/usr/lib64/libksgrd.so.5.27.5
 /usr/lib64/libksgrd.so.9
-/usr/lib64/libksignalplotter.so.5.27.4
+/usr/lib64/libksignalplotter.so.5.27.5
 /usr/lib64/libksignalplotter.so.9
-/usr/lib64/liblsofui.so.5.27.4
+/usr/lib64/liblsofui.so.5.27.5
 /usr/lib64/liblsofui.so.9
-/usr/lib64/libprocesscore.so.5.27.4
+/usr/lib64/libprocesscore.so.5.27.5
 /usr/lib64/libprocesscore.so.9
-/usr/lib64/libprocessui.so.5.27.4
+/usr/lib64/libprocessui.so.5.27.5
 /usr/lib64/libprocessui.so.9
 /usr/lib64/qt5/plugins/designer/ksignalplotter5widgets.so
 /usr/lib64/qt5/plugins/designer/ksysguard5widgets.so

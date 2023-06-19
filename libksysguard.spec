@@ -7,7 +7,7 @@
 #
 Name     : libksysguard
 Version  : 5.27.5
-Release  : 85
+Release  : 86
 URL      : https://download.kde.org/stable/plasma/5.27.5/libksysguard-5.27.5.tar.xz
 Source0  : https://download.kde.org/stable/plasma/5.27.5/libksysguard-5.27.5.tar.xz
 Source1  : https://download.kde.org/stable/plasma/5.27.5/libksysguard-5.27.5.tar.xz.sig
@@ -97,7 +97,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684886019
+export SOURCE_DATE_EPOCH=1687211357
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -130,7 +130,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1684886019
+export SOURCE_DATE_EPOCH=1687211357
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
 cp %{_builddir}/libksysguard-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/libksysguard/07c1ab270255cf247438e2358ff0c18835b6a6ce || :
@@ -247,15 +247,6 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKSysGuardFormatter.so
-/V3/usr/lib64/libKSysGuardSensorFaces.so
-/V3/usr/lib64/libKSysGuardSensors.so
-/V3/usr/lib64/libKSysGuardSystemStats.so
-/V3/usr/lib64/libksgrd.so
-/V3/usr/lib64/libksignalplotter.so
-/V3/usr/lib64/liblsofui.so
-/V3/usr/lib64/libprocesscore.so
-/V3/usr/lib64/libprocessui.so
 /usr/include/ksysguard/faces/FaceLoader.h
 /usr/include/ksysguard/faces/SensorFaceController.h
 /usr/include/ksysguard/faces/SensorFace_p.h
@@ -319,24 +310,15 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKSysGuardFormatter.so.1
 /V3/usr/lib64/libKSysGuardFormatter.so.5.27.5
-/V3/usr/lib64/libKSysGuardSensorFaces.so.1
 /V3/usr/lib64/libKSysGuardSensorFaces.so.5.27.5
-/V3/usr/lib64/libKSysGuardSensors.so.1
 /V3/usr/lib64/libKSysGuardSensors.so.5.27.5
-/V3/usr/lib64/libKSysGuardSystemStats.so.1
 /V3/usr/lib64/libKSysGuardSystemStats.so.5.27.5
 /V3/usr/lib64/libksgrd.so.5.27.5
-/V3/usr/lib64/libksgrd.so.9
 /V3/usr/lib64/libksignalplotter.so.5.27.5
-/V3/usr/lib64/libksignalplotter.so.9
 /V3/usr/lib64/liblsofui.so.5.27.5
-/V3/usr/lib64/liblsofui.so.9
 /V3/usr/lib64/libprocesscore.so.5.27.5
-/V3/usr/lib64/libprocesscore.so.9
 /V3/usr/lib64/libprocessui.so.5.27.5
-/V3/usr/lib64/libprocessui.so.9
 /V3/usr/lib64/qt5/plugins/designer/ksignalplotter5widgets.so
 /V3/usr/lib64/qt5/plugins/designer/ksysguard5widgets.so
 /V3/usr/lib64/qt5/plugins/designer/ksysguardlsof5widgets.so

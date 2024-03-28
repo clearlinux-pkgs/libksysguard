@@ -8,11 +8,11 @@
 # Source0 file verified with key 0xD7574483BB57B18D (jr@jriddell.org)
 #
 Name     : libksysguard
-Version  : 6.0.2
-Release  : 98
-URL      : https://download.kde.org/stable/plasma/6.0.2/libksysguard-6.0.2.tar.xz
-Source0  : https://download.kde.org/stable/plasma/6.0.2/libksysguard-6.0.2.tar.xz
-Source1  : https://download.kde.org/stable/plasma/6.0.2/libksysguard-6.0.2.tar.xz.sig
+Version  : 6.0.3
+Release  : 99
+URL      : https://download.kde.org/stable/plasma/6.0.3/libksysguard-6.0.3.tar.xz
+Source0  : https://download.kde.org/stable/plasma/6.0.3/libksysguard-6.0.3.tar.xz
+Source1  : https://download.kde.org/stable/plasma/6.0.3/libksysguard-6.0.3.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause BSD-3-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -93,15 +93,15 @@ locales components for the libksysguard package.
 
 
 %prep
-%setup -q -n libksysguard-6.0.2
-cd %{_builddir}/libksysguard-6.0.2
+%setup -q -n libksysguard-6.0.3
+cd %{_builddir}/libksysguard-6.0.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1711152748
+export SOURCE_DATE_EPOCH=1711652486
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -162,7 +162,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1711152748
+export SOURCE_DATE_EPOCH=1711652486
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libksysguard
 cp %{_builddir}/libksysguard-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/libksysguard/07c1ab270255cf247438e2358ff0c18835b6a6ce || :
@@ -323,11 +323,11 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKSysGuardFormatter.so.6.0.2
-/V3/usr/lib64/libKSysGuardSensorFaces.so.6.0.2
-/V3/usr/lib64/libKSysGuardSensors.so.6.0.2
-/V3/usr/lib64/libKSysGuardSystemStats.so.6.0.2
-/V3/usr/lib64/libprocesscore.so.6.0.2
+/V3/usr/lib64/libKSysGuardFormatter.so.6.0.3
+/V3/usr/lib64/libKSysGuardSensorFaces.so.6.0.3
+/V3/usr/lib64/libKSysGuardSensors.so.6.0.3
+/V3/usr/lib64/libKSysGuardSystemStats.so.6.0.3
+/V3/usr/lib64/libprocesscore.so.6.0.3
 /V3/usr/lib64/qt6/plugins/kf6/packagestructure/ksysguard_sensorface.so
 /V3/usr/lib64/qt6/plugins/ksysguard/process/ksysguard_plugin_network.so
 /V3/usr/lib64/qt6/plugins/ksysguard/process/ksysguard_plugin_nvidia.so
@@ -336,15 +336,15 @@ popd
 /V3/usr/lib64/qt6/qml/org/kde/ksysguard/process/libProcessPlugin.so
 /V3/usr/lib64/qt6/qml/org/kde/ksysguard/sensors/libSensorsPlugin.so
 /usr/lib64/libKSysGuardFormatter.so.2
-/usr/lib64/libKSysGuardFormatter.so.6.0.2
+/usr/lib64/libKSysGuardFormatter.so.6.0.3
 /usr/lib64/libKSysGuardSensorFaces.so.2
-/usr/lib64/libKSysGuardSensorFaces.so.6.0.2
+/usr/lib64/libKSysGuardSensorFaces.so.6.0.3
 /usr/lib64/libKSysGuardSensors.so.2
-/usr/lib64/libKSysGuardSensors.so.6.0.2
+/usr/lib64/libKSysGuardSensors.so.6.0.3
 /usr/lib64/libKSysGuardSystemStats.so.2
-/usr/lib64/libKSysGuardSystemStats.so.6.0.2
+/usr/lib64/libKSysGuardSystemStats.so.6.0.3
 /usr/lib64/libprocesscore.so.10
-/usr/lib64/libprocesscore.so.6.0.2
+/usr/lib64/libprocesscore.so.6.0.3
 /usr/lib64/qt6/plugins/kf6/packagestructure/ksysguard_sensorface.so
 /usr/lib64/qt6/plugins/ksysguard/process/ksysguard_plugin_network.so
 /usr/lib64/qt6/plugins/ksysguard/process/ksysguard_plugin_nvidia.so

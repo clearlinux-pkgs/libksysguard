@@ -9,7 +9,7 @@
 #
 Name     : libksysguard
 Version  : 6.1.4
-Release  : 107
+Release  : 108
 URL      : https://download.kde.org/stable/plasma/6.1.4/libksysguard-6.1.4.tar.xz
 Source0  : https://download.kde.org/stable/plasma/6.1.4/libksysguard-6.1.4.tar.xz
 Source1  : https://download.kde.org/stable/plasma/6.1.4/libksysguard-6.1.4.tar.xz.sig

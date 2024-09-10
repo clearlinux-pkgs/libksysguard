@@ -1,787 +1,211 @@
-libKSysGuardFormatter.so.2:KSysGuard::Formatter::formatValue(QVariant const&, KSysGuard::Unit, KSysGuard::MetricPrefix, QFlags<KSysGuard::FormatOption>)
-libKSysGuardFormatter.so.2:KSysGuard::Formatter::maximumLength(KSysGuard::Unit, QFont const&)
-libKSysGuardFormatter.so.2:KSysGuard::Formatter::localizedString(QVariant const&, KSysGuard::Unit, KSysGuard::MetricPrefix)
-libKSysGuardFormatter.so.2:KSysGuard::Formatter::scaleDownFactor(QVariant const&, KSysGuard::Unit, KSysGuard::MetricPrefix)
 libKSysGuardFormatter.so.2:KSysGuard::Formatter::symbol(KSysGuard::Unit)
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::FaceLoader(QObject*)
 libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::classBegin()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setSensors(QJsonArray const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::qt_metacast(char const*)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setReadOnly(bool)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setGroupName(QString const&)
 libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::colorsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::faceIdChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::labelsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::sensorsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::readOnlyChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::groupNameChanged()
 libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::componentComplete()
 libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::controllerChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setParentController(KSysGuard::SensorFaceController*)
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::faceIdChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::groupNameChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::labelsChanged()
 libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::parentControllerChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::readOnlyChanged()
 libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::reload()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setColors(QMap<QString, QVariant> const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setFaceId(QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setLabels(QMap<QString, QVariant> const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::FaceLoader(QObject*)
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::FaceLoader(QObject*)
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::sensorsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setParentController(KSysGuard::SensorFaceController*)
+libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::setReadOnly(bool)
 libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::~FaceLoader()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::~FaceLoader()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::~FaceLoader()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::qt_metacast(char const*)
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::SensorFace(QQuickItem*)
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::contentItemChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::formFactorChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::setContentItem(QQuickItem*)
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::setController(KSysGuard::SensorFaceController*)
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::setFormFactor(KSysGuard::SensorFace::FormFactor)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::geometryChange(QRectF const&, QRectF const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::setContentItem(QQuickItem*)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::formFactorChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::contentItemChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::SensorFace(QQuickItem*)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::SensorFace(QQuickItem*)
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::~SensorFace()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::~SensorFace()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::~SensorFace()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::loadPreset(QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::savePreset()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::qt_metacast(char const*)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::faceConfigUi()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::reloadConfig()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setShowTitle(bool)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::titleChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::faceIdChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setShouldSync(bool)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::replaceSensors(QString const&, QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorsConfigUi()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setSensorColors(QMap<QString, QVariant> const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setSensorLabels(QMap<QString, QVariant> const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setTotalSensors(QJsonArray const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::uninstallPreset(QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::showTitleChanged()
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::appearanceConfigUi()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::fullRepresentation()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setUpdateRateLimit(int)
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::availableFacesModel()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorColorsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorLabelsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::totalSensorsChanged()
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::availablePresetsModel()
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::compactRepresentation()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::missingSensorsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::updateRateLimitChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::reloadFaceConfiguration()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setLowPrioritySensorIds(QJsonArray const&)
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::faceConfigUi()
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::faceConfigurationChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setHighPrioritySensorIds(QJsonArray const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::lowPrioritySensorIdsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::faceIdChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::fullRepresentation()
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::highPrioritySensorIdsChanged()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setTitle(QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setFaceId(QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::SensorFaceController(KConfigGroup&, QQmlEngine*, QQmlEngine*)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::SensorFaceController(KConfigGroup&, QQmlEngine*, QQmlEngine*)
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::lowPrioritySensorIdsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::missingSensorsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::reloadConfig()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::reloadFaceConfiguration()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::savePreset()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorColorsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorLabelsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorsConfigUi()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setShouldSync(bool)
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setShowTitle(bool)
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::setUpdateRateLimit(int)
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::showTitleChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::titleChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::totalSensorsChanged()
+libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::updateRateLimitChanged()
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::~SensorFaceController()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::~SensorFaceController()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::~SensorFaceController()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::readSensors(KConfigGroup const&, QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::createConfigUi(QString const&, QMap<QString, QVariant> const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::resolveSensors(QJsonArray const&, std::function<void (KSysGuard::SensorResolver*)>)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::readAndUpdateSensors(KConfigGroup&, QString const&)
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::createGui(QString const&)
 libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::SensorFaceControllerPrivate()
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::SensorFaceControllerPrivate()
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::controller() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::metaObject() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::parentController() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::colors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::faceId() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::labels() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::sensors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::readOnly() const
-libKSysGuardSensorFaces.so.2:KSysGuard::FaceLoader::groupName() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::controller() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::formFactor() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::metaObject() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFace::contentItem() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::metaObject() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::shouldSync() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::configGroup() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorColors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::sensorLabels() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::totalSensors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::missingSensors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::maxTotalSensors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::updateRateLimit() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::faceConfiguration() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::lowPrioritySensorIds() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::supportsTotalSensors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::highPrioritySensorIds() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::supportsSensorsColors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::supportsLowPrioritySensors() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::icon() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::name() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::title() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::faceId() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceController::showTitle() const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::replaceDiskId(QString const&) const
-libKSysGuardSensorFaces.so.2:KSysGuard::SensorFaceControllerPrivate::replacePartitionId(QString const&) const
-libKSysGuardSensorFaces.so.2:non-virtual thunk to KSysGuard::FaceLoader::classBegin()
-libKSysGuardSensorFaces.so.2:non-virtual thunk to KSysGuard::FaceLoader::componentComplete()
-libKSysGuardSensorFaces.so.2:non-virtual thunk to KSysGuard::FaceLoader::~FaceLoader()
-libKSysGuardSensorFaces.so.2:non-virtual thunk to KSysGuard::FaceLoader::~FaceLoader()
-libKSysGuardSensorFaces.so.2:non-virtual thunk to KSysGuard::SensorFace::~SensorFace()
-libKSysGuardSensorFaces.so.2:non-virtual thunk to KSysGuard::SensorFace::~SensorFace()
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::sortByName()
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::qt_metacast(char const*)
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::waitForFinished()
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::Private::updateResult(QDBusPendingReply<QHash<QString, KSysGuard::SensorInfo> > const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::execute()
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::setPath(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::finished(KSysGuard::SensorQuery*)
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::SensorQuery(QString const&, QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::SensorQuery(QString const&, QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::~SensorQuery()
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::~SensorQuery()
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::~SensorQuery()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::classBegin()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::setEnabled(bool)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::setSensors(QList<QString> const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::qt_metacast(char const*)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::readyChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::removeSensor(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::onSensorAdded(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::enabledChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::onValueChanged(QString const&, QVariant const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::onSensorRemoved(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::setSensorColors(QMap<QString, QVariant> const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::setSensorLabels(QMap<QString, QVariant> const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::componentComplete()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::onMetaDataChanged(QString const&, KSysGuard::SensorInfo const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::setUpdateRateLimit(int)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorColorsChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorLabelsChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::resetUpdateRateLimit()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorMetaDataChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::updateRateLimitChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::addSensor(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::SensorDataModel(QList<QString> const&, QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::SensorDataModel(QList<QString> const&, QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::~SensorDataModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::~SensorDataModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::~SensorDataModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::qt_metacast(char const*)
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::onSensorAdded(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::onSensorRemoved(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::onMetaDataChanged(QString const&, KSysGuard::SensorInfo const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::init()
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::SensorTreeModel(QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::SensorTreeModel(QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::~SensorTreeModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::~SensorTreeModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::~SensorTreeModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::setSensors(QList<QString> const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::qt_metacast(char const*)
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::readyChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::sensorsChanged()
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::metaDataChanged(QString const&, KSysGuard::SensorInfo const&)
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::SensorUnitModel(QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::SensorUnitModel(QObject*)
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::~SensorUnitModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::~SensorUnitModel()
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::~SensorUnitModel()
+libKSysGuardSensors.so.2:KSysGuard::Sensor::Sensor(QObject*)
 libKSysGuardSensors.so.2:KSysGuard::Sensor::classBegin()
-libKSysGuardSensors.so.2:KSysGuard::Sensor::setEnabled(bool)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::qt_metacast(char const*)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::setSensorId(QString const&)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::enabledChanged()
-libKSysGuardSensors.so.2:KSysGuard::Sensor::onValueChanged(QString const&, QVariant const&)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::onEnabledChanged()
 libKSysGuardSensors.so.2:KSysGuard::Sensor::componentComplete()
-libKSysGuardSensors.so.2:KSysGuard::Sensor::onMetaDataChanged(QString const&, KSysGuard::SensorInfo const&)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::setUpdateRateLimit(int)
+libKSysGuardSensors.so.2:KSysGuard::Sensor::enabledChanged()
+libKSysGuardSensors.so.2:KSysGuard::Sensor::event(QEvent*)
+libKSysGuardSensors.so.2:KSysGuard::Sensor::onEnabledChanged()
 libKSysGuardSensors.so.2:KSysGuard::Sensor::resetUpdateRateLimit()
+libKSysGuardSensors.so.2:KSysGuard::Sensor::setEnabled(bool)
+libKSysGuardSensors.so.2:KSysGuard::Sensor::setUpdateRateLimit(int)
 libKSysGuardSensors.so.2:KSysGuard::Sensor::updateIntervalChanged()
 libKSysGuardSensors.so.2:KSysGuard::Sensor::updateRateLimitChanged()
-libKSysGuardSensors.so.2:KSysGuard::Sensor::event(QEvent*)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::Sensor(QObject*)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::Sensor(QString const&, QObject*)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::Sensor(KSysGuard::SensorQuery const&, int, QObject*)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::Sensor(QObject*)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::Sensor(QString const&, QObject*)
-libKSysGuardSensors.so.2:KSysGuard::Sensor::Sensor(KSysGuard::SensorQuery const&, int, QObject*)
 libKSysGuardSensors.so.2:KSysGuard::Sensor::~Sensor()
-libKSysGuardSensors.so.2:KSysGuard::Sensor::~Sensor()
-libKSysGuardSensors.so.2:KSysGuard::Sensor::~Sensor()
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::metaObject() const
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::path() const
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::result() const
-libKSysGuardSensors.so.2:KSysGuard::SensorQuery::sensorIds() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::headerData(int, Qt::Orientation, int) const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::metaObject() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::columnCount(QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorColors() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorLabels() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorsChanged() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::updateRateLimit() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::data(QModelIndex const&, int) const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::column(QString const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::enabled() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::isReady() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::maximum() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::minimum() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensors() const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::rowCount(QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::roleNames() const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::headerData(int, Qt::Orientation, int) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::metaObject() const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::columnCount(QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::data(QModelIndex const&, int) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::flags(QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::index(int, int, QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::parent(QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::mimeData(QList<QModelIndex> const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::rowCount(QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::mimeTypes() const
-libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::roleNames() const
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::metaObject() const
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::data(QModelIndex const&, int) const
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::ready() const
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::sensors() const
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::rowCount(QModelIndex const&) const
-libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::roleNames() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::metaObject() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::description() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::valueChanged() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::statusChanged() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::formattedValue() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::updateInterval() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::metaDataChanged() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::sensorIdChanged() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::updateRateLimit() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::name() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::type() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::unit() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::value() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::status() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::enabled() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::maximum() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::minimum() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::sensorId() const
-libKSysGuardSensors.so.2:KSysGuard::Sensor::shortName() const
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::SensorDataModel::classBegin()
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::SensorDataModel::componentComplete()
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::SensorDataModel::~SensorDataModel()
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::SensorDataModel::~SensorDataModel()
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::Sensor::classBegin()
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::Sensor::componentComplete()
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::Sensor::~Sensor()
-libKSysGuardSensors.so.2:non-virtual thunk to KSysGuard::Sensor::~Sensor()
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::sensorAdded(QString const&)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::newSensorData(QList<KSysGuard::SensorData>)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::sensorRemoved(QString const&)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::sensorMetaDataChanged(QHash<QString, KSysGuard::SensorInfo> const&)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::OrgKdeKsystemstats1Interface(QString const&, QString const&, QDBusConnection const&, QObject*)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::OrgKdeKsystemstats1Interface(QString const&, QString const&, QDBusConnection const&, QObject*)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::~OrgKdeKsystemstats1Interface()
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::~OrgKdeKsystemstats1Interface()
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::~OrgKdeKsystemstats1Interface()
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::setConvertFunction(std::function<QVariant (QByteArray const&)> const&)
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::update()
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::SysFsSensor(QString const&, QString const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::SysFsSensor(QString const&, QString const&, QVariant const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::SysFsSensor(QString const&, QString const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::SysFsSensor(QString const&, QString const&, QVariant const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::~SysFsSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::~SysFsSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::~SysFsSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::SystemStats::DBusInterface::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::SystemStats::DBusInterface::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:KSysGuard::SystemStats::DBusInterface::DBusInterface(QString const&, QString const&, QDBusConnection const&, QObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SystemStats::DBusInterface::DBusInterface(QString const&, QString const&, QDBusConnection const&, QObject*)
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::classBegin()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::componentComplete()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::enabledChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::readyChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::resetUpdateRateLimit()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorColorsChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorLabelsChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::sensorMetaDataChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::setEnabled(bool)
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::setUpdateRateLimit(int)
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::updateRateLimitChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorDataModel::~SensorDataModel()
+libKSysGuardSensors.so.2:KSysGuard::SensorQuery::execute()
+libKSysGuardSensors.so.2:KSysGuard::SensorQuery::finished(KSysGuard::SensorQuery*)
+libKSysGuardSensors.so.2:KSysGuard::SensorQuery::sortByName()
+libKSysGuardSensors.so.2:KSysGuard::SensorQuery::waitForFinished()
+libKSysGuardSensors.so.2:KSysGuard::SensorQuery::~SensorQuery()
+libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::SensorTreeModel(QObject*)
+libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::init()
+libKSysGuardSensors.so.2:KSysGuard::SensorTreeModel::~SensorTreeModel()
+libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::SensorUnitModel(QObject*)
+libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::readyChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::sensorsChanged()
+libKSysGuardSensors.so.2:KSysGuard::SensorUnitModel::~SensorUnitModel()
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::SensorIterator::operator++()
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::SensorIterator::operator++(int)
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::addSensor(KSysGuard::SensorProperty*)
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::delayedEmitDataChanged()
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::sensorDataChanged(KSysGuard::SensorProperty*)
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::subscribe()
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::unsubscribe()
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::updateSensors()
+libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::~AggregateSensor()
+libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::setBaseSensor(KSysGuard::SensorProperty*)
+libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::subscribe()
+libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::unsubscribe()
+libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::~PercentageSensor()
+libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::addObject(KSysGuard::SensorObject*)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::objectAdded(KSysGuard::SensorObject*)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::objectRemoved(KSysGuard::SensorObject*)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::objects()
+libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::removeObject(KSysGuard::SensorObject*)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::~SensorContainer()
+libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::aboutToBeRemoved()
 libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::addProperty(KSysGuard::SensorProperty*)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::nameChanged()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::aboutToBeRemoved()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::subscribedChanged(bool)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::setParentContainer(KSysGuard::SensorContainer*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::setName(QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::SensorObject(QString const&, KSysGuard::SensorContainer*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::SensorObject(QString const&, QString const&, KSysGuard::SensorContainer*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::SensorObject(QString const&, KSysGuard::SensorContainer*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::SensorObject(QString const&, QString const&, KSysGuard::SensorContainer*)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::subscribedChanged(bool)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::~SensorObject()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::~SensorObject()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::~SensorObject()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::qt_metacast(char const*)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::addContainer(KSysGuard::SensorContainer*)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::update()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::SensorPlugin(QObject*, QList<QVariant> const&)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::SensorPlugin(QObject*, QList<QVariant> const&)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::~SensorPlugin()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::~SensorPlugin()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::~SensorPlugin()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::unsubscribe()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setShortName(QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::valueChanged()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setDescription(QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setVariantType(QVariant::Type)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::sensorInfoChanged()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::subscribedChanged(bool)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setMax(KSysGuard::SensorProperty*)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setMax(double)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setMin(double)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setName(QString const&)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setUnit(KSysGuard::Unit)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setValue(QVariant const&)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setPrefix(QString const&)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::setVariantType(QVariant::Type)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::subscribe()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::SensorProperty(QString const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::SensorProperty(QString const&, QString const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::SensorProperty(QString const&, QString const&, QVariant const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::SensorProperty(QString const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::SensorProperty(QString const&, QString const&, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::SensorProperty(QString const&, QString const&, QVariant const&, KSysGuard::SensorObject*)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::subscribedChanged(bool)
+libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::unsubscribe()
+libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::valueChanged()
 libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::~SensorProperty()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::~SensorProperty()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::~SensorProperty()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::unsubscribe()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::removeSensor(QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::updateSensors()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::SensorIterator::operator++(int)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::SensorIterator::operator++()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::setMatchSensors(QRegularExpression const&, QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::sensorDataChanged(KSysGuard::SensorProperty*)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::setFilterFunction(std::function<bool (KSysGuard::SensorProperty const*)> const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::setAggregateFunction(std::function<QVariant (KSysGuard::AggregateSensor::SensorIterator, KSysGuard::AggregateSensor::SensorIterator)> const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::setAggregateFunction(std::function<QVariant (QVariant, QVariant)> const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::delayedEmitDataChanged()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::addSensor(KSysGuard::SensorProperty*)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::subscribe()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::AggregateSensor(KSysGuard::SensorObject*, QString const&, QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::AggregateSensor(KSysGuard::SensorObject*, QString const&, QString const&, QVariant const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::AggregateSensor(KSysGuard::SensorObject*, QString const&, QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::AggregateSensor(KSysGuard::SensorObject*, QString const&, QString const&, QVariant const&)
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::~AggregateSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::~AggregateSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::~AggregateSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::objectAdded(KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::removeObject(KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::objectRemoved(KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::objects()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::addObject(KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::SensorContainer(QString const&, QString const&, KSysGuard::SensorPlugin*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::SensorContainer(QString const&, QString const&, KSysGuard::SensorPlugin*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::~SensorContainer()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::~SensorContainer()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::~SensorContainer()
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::qt_metacast(char const*)
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::unsubscribe()
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::setBaseSensor(KSysGuard::SensorProperty*)
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::subscribe()
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::PercentageSensor(KSysGuard::SensorObject*, QString const&, QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::PercentageSensor(KSysGuard::SensorObject*, QString const&, QString const&)
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::~PercentageSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::~PercentageSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::~PercentageSensor()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorsFeatureSensor::qt_metacall(QMetaObject::Call, int, void**)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorsFeatureSensor::qt_metacast(char const*)
 libKSysGuardSystemStats.so.2:KSysGuard::SensorsFeatureSensor::update()
-libKSysGuardSystemStats.so.2:KSysGuard::SensorsFeatureSensor::SensorsFeatureSensor(QString const&, sensors_chip_name const*, sensors_subfeature const*, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::SensorsFeatureSensor::SensorsFeatureSensor(QString const&, sensors_chip_name const*, sensors_subfeature const*, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:KSysGuard::makeSensorsFeatureSensor(QString const&, sensors_chip_name const*, sensors_feature const*, KSysGuard::SensorObject*)
-libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SystemStats::DBusInterface::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::isSubscribed() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::id() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::name() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::path() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::sensor(QString const&) const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorObject::sensors() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::containers() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorPlugin::providerName() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::isSubscribed() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::parentObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::id() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::info() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::path() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorProperty::value() const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::matchCount() const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::matchSensors() const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::SensorIterator::operator*() const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::SensorIterator::operator==(KSysGuard::AggregateSensor::SensorIterator const&) const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::SensorIterator::operator!=(KSysGuard::AggregateSensor::SensorIterator const&) const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::filterFunction() const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::aggregateFunction() const
-libKSysGuardSystemStats.so.2:KSysGuard::AggregateSensor::value() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::id() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::name() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorContainer::object(QString const&) const
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::metaObject() const
-libKSysGuardSystemStats.so.2:KSysGuard::PercentageSensor::value() const
-libKSysGuardSystemStats.so.2:KSysGuard::SensorsFeatureSensor::metaObject() const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::setEnabled(bool)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::rootChanged()
-libprocesscore.so.10:KSysGuard::CGroupDataModel::enabledChanged()
+libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::update()
+libKSysGuardSystemStats.so.2:KSysGuard::SysFsSensor::~SysFsSensor()
+libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::newSensorData(QList<KSysGuard::SensorData>)
+libKSysGuardSystemStats.so.2:OrgKdeKsystemstats1Interface::~OrgKdeKsystemstats1Interface()
+libprocesscore.so.10:KSysGuard::ApplicationDataModel::ApplicationDataModel(QObject*)
+libprocesscore.so.10:KSysGuard::CGroup::cgroupSysBasePath()
+libprocesscore.so.10:KSysGuard::CGroup::~CGroup()
+libprocesscore.so.10:KSysGuard::CGroupDataModel::CGroupDataModel(QObject*)
 libprocesscore.so.10:KSysGuard::CGroupDataModel::attributesModel()
 libprocesscore.so.10:KSysGuard::CGroupDataModel::availableChanged()
-libprocesscore.so.10:KSysGuard::CGroupDataModel::filterAcceptsCGroup(QString const&)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::setEnabledAttributes(QList<QString> const&)
 libprocesscore.so.10:KSysGuard::CGroupDataModel::enabledAttributesChanged()
-libprocesscore.so.10:KSysGuard::CGroupDataModel::update(KSysGuard::CGroup*)
+libprocesscore.so.10:KSysGuard::CGroupDataModel::enabledChanged()
+libprocesscore.so.10:KSysGuard::CGroupDataModel::rootChanged()
+libprocesscore.so.10:KSysGuard::CGroupDataModel::setEnabled(bool)
 libprocesscore.so.10:KSysGuard::CGroupDataModel::update()
-libprocesscore.so.10:KSysGuard::CGroupDataModel::setRoot(QString const&)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::CGroupDataModel(QObject*)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::CGroupDataModel(QString const&, QObject*)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::CGroupDataModel(QObject*)
-libprocesscore.so.10:KSysGuard::CGroupDataModel::CGroupDataModel(QString const&, QObject*)
+libprocesscore.so.10:KSysGuard::CGroupDataModel::update(KSysGuard::CGroup*)
 libprocesscore.so.10:KSysGuard::CGroupDataModel::~CGroupDataModel()
-libprocesscore.so.10:KSysGuard::CGroupDataModel::~CGroupDataModel()
-libprocesscore.so.10:KSysGuard::CGroupDataModel::~CGroupDataModel()
-libprocesscore.so.10:KSysGuard::ProcessAttribute::dataChanged(KSysGuard::Process*)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setShortName(QString const&)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::connectNotify(QMetaMethod const&)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::enabledChanged(bool)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setDescription(QString const&)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::disconnectNotify(QMetaMethod const&)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setVisibleByDefault(bool)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setRequiredUpdateFlags(QFlags<KSysGuard::Processes::UpdateFlag>)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setMax(double)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setMin(double)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setData(KSysGuard::Process*, QVariant const&)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setName(QString const&)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::setUnit(KSysGuard::Unit)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::clearData(KSysGuard::Process*)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::ProcessAttribute(QString const&, QObject*)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::ProcessAttribute(QString const&, QString const&, QObject*)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::ProcessAttribute(QString const&, QObject*)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::ProcessAttribute(QString const&, QString const&, QObject*)
-libprocesscore.so.10:KSysGuard::ProcessAttribute::~ProcessAttribute()
-libprocesscore.so.10:KSysGuard::ProcessAttribute::~ProcessAttribute()
-libprocesscore.so.10:KSysGuard::ProcessAttribute::~ProcessAttribute()
-libprocesscore.so.10:KSysGuard::ProcessDataModel::setEnabled(bool)
-libprocesscore.so.10:KSysGuard::ProcessDataModel::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::ProcessDataModel::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::ProcessDataModel::setFlatList(bool)
-libprocesscore.so.10:KSysGuard::ProcessDataModel::enabledChanged()
-libprocesscore.so.10:KSysGuard::ProcessDataModel::attributesModel()
-libprocesscore.so.10:KSysGuard::ProcessDataModel::flatListChanged()
-libprocesscore.so.10:KSysGuard::ProcessDataModel::setEnabledAttributes(QList<QString> const&)
-libprocesscore.so.10:KSysGuard::ProcessDataModel::enabledAttributesChanged()
-libprocesscore.so.10:KSysGuard::ProcessDataModel::ProcessDataModel(QObject*)
-libprocesscore.so.10:KSysGuard::ProcessDataModel::ProcessDataModel(QObject*)
-libprocesscore.so.10:KSysGuard::ProcessDataModel::~ProcessDataModel()
-libprocesscore.so.10:KSysGuard::ProcessDataModel::~ProcessDataModel()
-libprocesscore.so.10:KSysGuard::ProcessDataModel::~ProcessDataModel()
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::qt_metacast(char const*)
+libprocesscore.so.10:KSysGuard::ExtendedProcesses::ExtendedProcesses(QObject*)
 libprocesscore.so.10:KSysGuard::ExtendedProcesses::instance()
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::ExtendedProcesses(QObject*)
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::ExtendedProcesses(QObject*)
 libprocesscore.so.10:KSysGuard::ExtendedProcesses::~ExtendedProcesses()
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::~ExtendedProcesses()
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::~ExtendedProcesses()
-libprocesscore.so.10:KSysGuard::ProcessController::sendSignal(QList<QVariant> const&, int)
-libprocesscore.so.10:KSysGuard::ProcessController::sendSignal(QList<int> const&, int)
-libprocesscore.so.10:KSysGuard::ProcessController::sendSignal(QList<long long> const&, int)
-libprocesscore.so.10:KSysGuard::ProcessController::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::ProcessController::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::ProcessController::setPriority(QList<QVariant> const&, int)
-libprocesscore.so.10:KSysGuard::ProcessController::setPriority(QList<int> const&, int)
-libprocesscore.so.10:KSysGuard::ProcessController::setPriority(QList<long long> const&, int)
-libprocesscore.so.10:KSysGuard::ProcessController::resultToString(KSysGuard::ProcessController::Result)
-libprocesscore.so.10:KSysGuard::ProcessController::setIOScheduler(QList<QVariant> const&, KSysGuard::Process::IoPriorityClass, int)
-libprocesscore.so.10:KSysGuard::ProcessController::setIOScheduler(QList<int> const&, KSysGuard::Process::IoPriorityClass, int)
-libprocesscore.so.10:KSysGuard::ProcessController::setIOScheduler(QList<long long> const&, KSysGuard::Process::IoPriorityClass, int)
-libprocesscore.so.10:KSysGuard::ProcessController::setCPUScheduler(QList<QVariant> const&, KSysGuard::Process::Scheduler, int)
-libprocesscore.so.10:KSysGuard::ProcessController::setCPUScheduler(QList<int> const&, KSysGuard::Process::Scheduler, int)
-libprocesscore.so.10:KSysGuard::ProcessController::setCPUScheduler(QList<long long> const&, KSysGuard::Process::Scheduler, int)
-libprocesscore.so.10:KSysGuard::ProcessController::Private::applyToPids(QList<int> const&, std::function<KSysGuard::Processes::Error (int)> const&)
-libprocesscore.so.10:KSysGuard::ProcessController::Private::listToVector(QList<QVariant> const&)
-libprocesscore.so.10:KSysGuard::ProcessController::Private::listToVector(QList<long long> const&)
-libprocesscore.so.10:KSysGuard::ProcessController::Private::runKAuthAction(QString const&, QList<int> const&, QMap<QString, QVariant> const&)
-libprocesscore.so.10:KSysGuard::ProcessController::setWindow(QWindow*)
-libprocesscore.so.10:KSysGuard::ProcessController::ProcessController(QObject*)
-libprocesscore.so.10:KSysGuard::ProcessController::ProcessController(QObject*)
-libprocesscore.so.10:KSysGuard::ProcessController::~ProcessController()
-libprocesscore.so.10:KSysGuard::ProcessController::~ProcessController()
-libprocesscore.so.10:KSysGuard::ProcessController::~ProcessController()
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::getProcess(long)
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::addProcessAttribute(KSysGuard::ProcessAttribute*)
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::ProcessDataProvider(QObject*, QList<QVariant> const&)
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::ProcessDataProvider(QObject*, QList<QVariant> const&)
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::~ProcessDataProvider()
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::~ProcessDataProvider()
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::~ProcessDataProvider()
-libprocesscore.so.10:KSysGuard::ApplicationDataModel::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::ApplicationDataModel::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::ApplicationDataModel::filterAcceptsCGroup(QString const&)
-libprocesscore.so.10:KSysGuard::ApplicationDataModel::ApplicationDataModel(QObject*)
-libprocesscore.so.10:KSysGuard::ApplicationDataModel::ApplicationDataModel(QObject*)
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::ProcessAttributeModel(QList<KSysGuard::ProcessAttribute*> const&, QObject*)
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::ProcessAttributeModel(QList<KSysGuard::ProcessAttribute*> const&, QObject*)
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::~ProcessAttributeModel()
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::~ProcessAttributeModel()
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::~ProcessAttributeModel()
-libprocesscore.so.10:KSysGuard::CGroup::requestPids(QObject*, std::function<void (QList<int>)>)
-libprocesscore.so.10:KSysGuard::CGroup::cgroupSysBasePath()
-libprocesscore.so.10:KSysGuard::CGroup::setPids(QList<int> const&)
-libprocesscore.so.10:KSysGuard::CGroup::CGroup(QString const&)
-libprocesscore.so.10:KSysGuard::CGroup::CGroup(QString const&)
-libprocesscore.so.10:KSysGuard::CGroup::~CGroup()
-libprocesscore.so.10:KSysGuard::CGroup::~CGroup()
-libprocesscore.so.10:KSysGuard::CGroup::~CGroup()
+libprocesscore.so.10:KSysGuard::Process::Process()
+libprocesscore.so.10:KSysGuard::Process::clear()
 libprocesscore.so.10:KSysGuard::Process::setChanges(KSysGuard::Process::Change)
-libprocesscore.so.10:KSysGuard::Process::setCommand(QString const&)
-libprocesscore.so.10:KSysGuard::Process::setSysTime(long long)
-libprocesscore.so.10:KSysGuard::Process::setSysUsage(int)
-libprocesscore.so.10:KSysGuard::Process::setUserTime(long long)
-libprocesscore.so.10:KSysGuard::Process::setNiceLevel(int)
-libprocesscore.so.10:KSysGuard::Process::setParentPid(long)
-libprocesscore.so.10:KSysGuard::Process::setScheduler(KSysGuard::Process::Scheduler)
-libprocesscore.so.10:KSysGuard::Process::setStartTime(long long)
-libprocesscore.so.10:KSysGuard::Process::setTracerpid(long long)
-libprocesscore.so.10:KSysGuard::Process::setUserUsage(int)
-libprocesscore.so.10:KSysGuard::Process::setMACContext(QString const&)
-libprocesscore.so.10:KSysGuard::Process::setNumThreads(int)
-libprocesscore.so.10:KSysGuard::Process::setIoniceLevel(int)
-libprocesscore.so.10:KSysGuard::Process::setTotalSysUsage(int)
-libprocesscore.so.10:KSysGuard::Process::setIoReadSyscalls(long long)
-libprocesscore.so.10:KSysGuard::Process::setTotalUserUsage(int)
-libprocesscore.so.10:KSysGuard::Process::setIoPriorityClass(KSysGuard::Process::IoPriorityClass)
-libprocesscore.so.10:KSysGuard::Process::setIoWriteSyscalls(long long)
-libprocesscore.so.10:KSysGuard::Process::setNoNewPrivileges(int)
-libprocesscore.so.10:KSysGuard::Process::setIoCharactersRead(long long)
-libprocesscore.so.10:KSysGuard::Process::setIoReadSyscallsRate(long)
-libprocesscore.so.10:KSysGuard::Process::setIoCharactersWritten(long long)
-libprocesscore.so.10:KSysGuard::Process::setIoWriteSyscallsRate(long)
-libprocesscore.so.10:KSysGuard::Process::setIoCharactersReadRate(long)
 libprocesscore.so.10:KSysGuard::Process::setElapsedTimeMilliSeconds(int)
-libprocesscore.so.10:KSysGuard::Process::setIoCharactersWrittenRate(long)
-libprocesscore.so.10:KSysGuard::Process::setIoCharactersActuallyRead(long long)
-libprocesscore.so.10:KSysGuard::Process::setIoCharactersActuallyWritten(long long)
+libprocesscore.so.10:KSysGuard::Process::setIndex(int)
 libprocesscore.so.10:KSysGuard::Process::setIoCharactersActuallyReadRate(long)
 libprocesscore.so.10:KSysGuard::Process::setIoCharactersActuallyWrittenRate(long)
-libprocesscore.so.10:KSysGuard::Process::clear()
-libprocesscore.so.10:KSysGuard::Process::setGid(long long)
-libprocesscore.so.10:KSysGuard::Process::setTty(QByteArray const&)
-libprocesscore.so.10:KSysGuard::Process::setUid(long long)
-libprocesscore.so.10:KSysGuard::Process::setEgid(long long)
-libprocesscore.so.10:KSysGuard::Process::setEuid(long long)
-libprocesscore.so.10:KSysGuard::Process::setName(QString const&)
-libprocesscore.so.10:KSysGuard::Process::setSgid(long long)
-libprocesscore.so.10:KSysGuard::Process::setSuid(long long)
-libprocesscore.so.10:KSysGuard::Process::setFsgid(long long)
-libprocesscore.so.10:KSysGuard::Process::setFsuid(long long)
-libprocesscore.so.10:KSysGuard::Process::setIndex(int)
-libprocesscore.so.10:KSysGuard::Process::setLogin(QString const&)
-libprocesscore.so.10:KSysGuard::Process::setVmPSS(long long)
-libprocesscore.so.10:KSysGuard::Process::setVmRSS(long long)
-libprocesscore.so.10:KSysGuard::Process::setCGroup(QString const&)
+libprocesscore.so.10:KSysGuard::Process::setIoCharactersReadRate(long)
+libprocesscore.so.10:KSysGuard::Process::setIoCharactersWrittenRate(long)
+libprocesscore.so.10:KSysGuard::Process::setIoPriorityClass(KSysGuard::Process::IoPriorityClass)
+libprocesscore.so.10:KSysGuard::Process::setIoReadSyscallsRate(long)
+libprocesscore.so.10:KSysGuard::Process::setIoWriteSyscallsRate(long)
+libprocesscore.so.10:KSysGuard::Process::setIoniceLevel(int)
+libprocesscore.so.10:KSysGuard::Process::setNiceLevel(int)
+libprocesscore.so.10:KSysGuard::Process::setNoNewPrivileges(int)
+libprocesscore.so.10:KSysGuard::Process::setNumThreads(int)
 libprocesscore.so.10:KSysGuard::Process::setParent(KSysGuard::Process*)
+libprocesscore.so.10:KSysGuard::Process::setParentPid(long)
+libprocesscore.so.10:KSysGuard::Process::setScheduler(KSysGuard::Process::Scheduler)
 libprocesscore.so.10:KSysGuard::Process::setStatus(KSysGuard::Process::ProcessStatus)
-libprocesscore.so.10:KSysGuard::Process::setVmSize(long long)
-libprocesscore.so.10:KSysGuard::Process::setVmURSS(long long)
-libprocesscore.so.10:KSysGuard::Process::Process()
-libprocesscore.so.10:KSysGuard::Process::Process(long long, long long, KSysGuard::Process*)
-libprocesscore.so.10:KSysGuard::Process::Process()
-libprocesscore.so.10:KSysGuard::Process::Process(long long, long long, KSysGuard::Process*)
+libprocesscore.so.10:KSysGuard::Process::setSysUsage(int)
+libprocesscore.so.10:KSysGuard::Process::setTotalSysUsage(int)
+libprocesscore.so.10:KSysGuard::Process::setTotalUserUsage(int)
+libprocesscore.so.10:KSysGuard::Process::setUserUsage(int)
 libprocesscore.so.10:KSysGuard::Process::~Process()
-libprocesscore.so.10:KSysGuard::Process::~Process()
-libprocesscore.so.10:KSysGuard::Process::~Process()
-libprocesscore.so.10:KSysGuard::Processes::addProcess(long, long)
-libprocesscore.so.10:KSysGuard::Processes::runCommand(QString const&, int)
-libprocesscore.so.10:KSysGuard::Processes::sendSignal(long, int)
-libprocesscore.so.10:KSysGuard::Processes::killProcess(long)
-libprocesscore.so.10:KSysGuard::Processes::qt_metacall(QMetaObject::Call, int, void**)
-libprocesscore.so.10:KSysGuard::Processes::qt_metacast(char const*)
-libprocesscore.so.10:KSysGuard::Processes::setNiceness(long, int)
-libprocesscore.so.10:KSysGuard::Processes::setScheduler(long, KSysGuard::Process::Scheduler, int)
-libprocesscore.so.10:KSysGuard::Processes::endAddProcess()
-libprocesscore.so.10:KSysGuard::Processes::setIoNiceness(long, KSysGuard::Process::IoPriorityClass, int)
-libprocesscore.so.10:KSysGuard::Processes::updateProcess(KSysGuard::Process*, long)
-libprocesscore.so.10:KSysGuard::Processes::answerReceived(int, QList<QByteArray> const&)
-libprocesscore.so.10:KSysGuard::Processes::endMoveProcess()
-libprocesscore.so.10:KSysGuard::Processes::processChanged(KSysGuard::Process*, bool)
-libprocesscore.so.10:KSysGuard::Processes::processUpdated(long, QList<std::pair<KSysGuard::Process::Change, QVariant> > const&)
-libprocesscore.so.10:KSysGuard::Processes::setViewingTime(QDateTime const&)
-libprocesscore.so.10:KSysGuard::Processes::useCurrentData()
+libprocesscore.so.10:KSysGuard::ProcessAttribute::clearData(KSysGuard::Process*)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::dataChanged(KSysGuard::Process*)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::enabledChanged(bool)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::setMax(double)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::setMin(double)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::setRequiredUpdateFlags(QFlags<KSysGuard::Processes::UpdateFlag>)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::setUnit(KSysGuard::Unit)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::setVisibleByDefault(bool)
+libprocesscore.so.10:KSysGuard::ProcessAttribute::~ProcessAttribute()
+libprocesscore.so.10:KSysGuard::ProcessAttributeModel::~ProcessAttributeModel()
+libprocesscore.so.10:KSysGuard::ProcessController::ProcessController(QObject*)
+libprocesscore.so.10:KSysGuard::ProcessController::resultToString(KSysGuard::ProcessController::Result)
+libprocesscore.so.10:KSysGuard::ProcessController::setWindow(QWindow*)
+libprocesscore.so.10:KSysGuard::ProcessController::~ProcessController()
+libprocesscore.so.10:KSysGuard::ProcessDataModel::ProcessDataModel(QObject*)
+libprocesscore.so.10:KSysGuard::ProcessDataModel::attributesModel()
+libprocesscore.so.10:KSysGuard::ProcessDataModel::enabledAttributesChanged()
+libprocesscore.so.10:KSysGuard::ProcessDataModel::enabledChanged()
+libprocesscore.so.10:KSysGuard::ProcessDataModel::flatListChanged()
+libprocesscore.so.10:KSysGuard::ProcessDataModel::setEnabled(bool)
+libprocesscore.so.10:KSysGuard::ProcessDataModel::setFlatList(bool)
+libprocesscore.so.10:KSysGuard::ProcessDataModel::~ProcessDataModel()
+libprocesscore.so.10:KSysGuard::ProcessDataProvider::addProcessAttribute(KSysGuard::ProcessAttribute*)
+libprocesscore.so.10:KSysGuard::ProcessDataProvider::getProcess(long)
+libprocesscore.so.10:KSysGuard::ProcessDataProvider::~ProcessDataProvider()
 libprocesscore.so.10:KSysGuard::Processes::beginAddProcess(KSysGuard::Process*)
-libprocesscore.so.10:KSysGuard::Processes::loadHistoryFile(QString const&)
-libprocesscore.so.10:KSysGuard::Processes::beginMoveProcess(KSysGuard::Process*, KSysGuard::Process*)
-libprocesscore.so.10:KSysGuard::Processes::endRemoveProcess()
-libprocesscore.so.10:KSysGuard::Processes::processesUpdated()
-libprocesscore.so.10:KSysGuard::Processes::updateProcessInfo(KSysGuard::Process*)
 libprocesscore.so.10:KSysGuard::Processes::beginRemoveProcess(KSysGuard::Process*)
-libprocesscore.so.10:KSysGuard::Processes::supportsIoNiceness()
-libprocesscore.so.10:KSysGuard::Processes::updateAllProcesses(long, QFlags<KSysGuard::Processes::UpdateFlag>)
-libprocesscore.so.10:KSysGuard::Processes::updateOrAddProcess(long)
-libprocesscore.so.10:KSysGuard::Processes::totalPhysicalMemory()
+libprocesscore.so.10:KSysGuard::Processes::endAddProcess()
+libprocesscore.so.10:KSysGuard::Processes::endMoveProcess()
+libprocesscore.so.10:KSysGuard::Processes::endRemoveProcess()
+libprocesscore.so.10:KSysGuard::Processes::killProcess(long)
 libprocesscore.so.10:KSysGuard::Processes::numberProcessorCores()
+libprocesscore.so.10:KSysGuard::Processes::processesUpdated()
+libprocesscore.so.10:KSysGuard::Processes::supportsIoNiceness()
+libprocesscore.so.10:KSysGuard::Processes::totalPhysicalMemory()
+libprocesscore.so.10:KSysGuard::Processes::updateOrAddProcess(long)
+libprocesscore.so.10:KSysGuard::Processes::updateProcessInfo(KSysGuard::Process*)
 libprocesscore.so.10:KSysGuard::Processes::updated()
-libprocesscore.so.10:KSysGuard::Processes::Processes(QString const&, QObject*)
-libprocesscore.so.10:KSysGuard::Processes::Processes(QString const&, QObject*)
+libprocesscore.so.10:KSysGuard::Processes::useCurrentData()
 libprocesscore.so.10:KSysGuard::Processes::~Processes()
-libprocesscore.so.10:KSysGuard::Processes::~Processes()
-libprocesscore.so.10:KSysGuard::Processes::~Processes()
-libprocesscore.so.10:KSysGuard::CGroupDataModel::headerData(int, Qt::Orientation, int) const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::metaObject() const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::columnCount(QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::isAvailable() const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::getQModelIndex(KSysGuard::CGroup*, int) const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::enabledAttributes() const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::availableAttributes() const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::data(QModelIndex const&, int) const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::root() const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::index(int, int, QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::parent(QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::rowCount(QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::isEnabled() const
-libprocesscore.so.10:KSysGuard::CGroupDataModel::roleNames() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::cgroupData(KSysGuard::CGroup*, QList<KSysGuard::Process*> const&) const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::metaObject() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::description() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::isVisibleByDefault() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::requiredUpdateFlags() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::id() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::max() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::min() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::data(KSysGuard::Process*) const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::name() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::unit() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::enabled() const
-libprocesscore.so.10:KSysGuard::ProcessAttribute::shortName() const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::headerData(int, Qt::Orientation, int) const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::metaObject() const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::columnCount(QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::enabledAttributes() const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::availableAttributes() const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::data(QModelIndex const&, int) const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::index(int, int, QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::parent(QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::enabled() const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::flatList() const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::rowCount(QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::ProcessDataModel::roleNames() const
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::attributes() const
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::metaObject() const
-libprocesscore.so.10:KSysGuard::ExtendedProcesses::extendedAttributes() const
-libprocesscore.so.10:KSysGuard::ProcessController::metaObject() const
-libprocesscore.so.10:KSysGuard::ProcessController::window() const
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::attributes() const
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::metaObject() const
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::enabled() const
-libprocesscore.so.10:KSysGuard::ProcessDataProvider::processes() const
-libprocesscore.so.10:KSysGuard::ApplicationDataModel::metaObject() const
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::metaObject() const
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::data(QModelIndex const&, int) const
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::rowCount(QModelIndex const&) const
-libprocesscore.so.10:KSysGuard::ProcessAttributeModel::roleNames() const
-libprocesscore.so.10:KSysGuard::CGroup::id() const
-libprocesscore.so.10:KSysGuard::CGroup::pids() const
-libprocesscore.so.10:KSysGuard::CGroup::service() const
-libprocesscore.so.10:KSysGuard::Process::macContext() const
-libprocesscore.so.10:KSysGuard::Process::numThreads() const
-libprocesscore.so.10:KSysGuard::Process::ioniceLevel() const
-libprocesscore.so.10:KSysGuard::Process::numChildren() const
-libprocesscore.so.10:KSysGuard::Process::pixmapBytes() const
-libprocesscore.so.10:KSysGuard::Process::vmPSSChange() const
-libprocesscore.so.10:KSysGuard::Process::vmRSSChange() const
-libprocesscore.so.10:KSysGuard::Process::vmSizeChange() const
-libprocesscore.so.10:KSysGuard::Process::vmURSSChange() const
-libprocesscore.so.10:KSysGuard::Process::totalSysUsage() const
-libprocesscore.so.10:KSysGuard::Process::ioReadSyscalls() const
-libprocesscore.so.10:KSysGuard::Process::totalUserUsage() const
-libprocesscore.so.10:KSysGuard::Process::ioPriorityClass() const
-libprocesscore.so.10:KSysGuard::Process::ioWriteSyscalls() const
-libprocesscore.so.10:KSysGuard::Process::noNewPrivileges() const
-libprocesscore.so.10:KSysGuard::Process::timeKillWasSent() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersRead() const
-libprocesscore.so.10:KSysGuard::Process::translatedStatus() const
-libprocesscore.so.10:KSysGuard::Process::niceLevelAsString() const
-libprocesscore.so.10:KSysGuard::Process::schedulerAsString() const
-libprocesscore.so.10:KSysGuard::Process::ioReadSyscallsRate() const
-libprocesscore.so.10:KSysGuard::Process::hasManagedGuiWindow() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersWritten() const
-libprocesscore.so.10:KSysGuard::Process::ioWriteSyscallsRate() const
-libprocesscore.so.10:KSysGuard::Process::ioniceLevelAsString() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersReadRate() const
-libprocesscore.so.10:KSysGuard::Process::elapsedTimeMilliSeconds() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersWrittenRate() const
-libprocesscore.so.10:KSysGuard::Process::ioPriorityClassAsString() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersActuallyRead() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersActuallyWritten() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersActuallyReadRate() const
-libprocesscore.so.10:KSysGuard::Process::ioCharactersActuallyWrittenRate() const
-libprocesscore.so.10:KSysGuard::Process::gid() const
-libprocesscore.so.10:KSysGuard::Process::pid() const
-libprocesscore.so.10:KSysGuard::Process::tty() const
-libprocesscore.so.10:KSysGuard::Process::uid() const
-libprocesscore.so.10:KSysGuard::Process::egid() const
-libprocesscore.so.10:KSysGuard::Process::euid() const
-libprocesscore.so.10:KSysGuard::Process::name() const
-libprocesscore.so.10:KSysGuard::Process::sgid() const
-libprocesscore.so.10:KSysGuard::Process::suid() const
-libprocesscore.so.10:KSysGuard::Process::fsgid() const
-libprocesscore.so.10:KSysGuard::Process::fsuid() const
-libprocesscore.so.10:KSysGuard::Process::index() const
-libprocesscore.so.10:KSysGuard::Process::login() const
-libprocesscore.so.10:KSysGuard::Process::vmPSS() const
-libprocesscore.so.10:KSysGuard::Process::vmRSS() const
-libprocesscore.so.10:KSysGuard::Process::cGroup() const
-libprocesscore.so.10:KSysGuard::Process::parent() const
-libprocesscore.so.10:KSysGuard::Process::status() const
-libprocesscore.so.10:KSysGuard::Process::vmSize() const
-libprocesscore.so.10:KSysGuard::Process::vmURSS() const
-libprocesscore.so.10:KSysGuard::Process::changes() const
-libprocesscore.so.10:KSysGuard::Process::command() const
-libprocesscore.so.10:KSysGuard::Process::sysTime() const
-libprocesscore.so.10:KSysGuard::Process::children() const
-libprocesscore.so.10:KSysGuard::Process::sysUsage() const
-libprocesscore.so.10:KSysGuard::Process::userTime() const
-libprocesscore.so.10:KSysGuard::Process::niceLevel() const
-libprocesscore.so.10:KSysGuard::Process::parentPid() const
-libprocesscore.so.10:KSysGuard::Process::scheduler() const
-libprocesscore.so.10:KSysGuard::Process::startTime() const
-libprocesscore.so.10:KSysGuard::Process::tracerpid() const
-libprocesscore.so.10:KSysGuard::Process::userUsage() const
-libprocesscore.so.10:KSysGuard::Processes::getProcess(long) const
-libprocesscore.so.10:KSysGuard::Processes::metaObject() const
-libprocesscore.so.10:KSysGuard::Processes::viewingTime() const
-libprocesscore.so.10:KSysGuard::Processes::processCount() const
-libprocesscore.so.10:KSysGuard::Processes::getAllProcesses() const
-libprocesscore.so.10:KSysGuard::Processes::historyFileName() const
-libprocesscore.so.10:KSysGuard::Processes::historiesAvailable() const
-libprocesscore.so.10:KSysGuard::Processes::isHistoryAvailable() const
-libprocesscore.so.10:KSysGuard::Processes::lastError() const

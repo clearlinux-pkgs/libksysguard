@@ -1,5 +1,5 @@
 PKG_NAME := libksysguard
-URL = https://download.kde.org/stable/plasma/6.3.0/libksysguard-6.3.0.tar.xz
+URL = https://download.kde.org/stable/plasma/6.3.1/libksysguard-6.3.1.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
